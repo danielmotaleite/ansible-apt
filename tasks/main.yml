@@ -1,8 +1,8 @@
 ---
-- include: apt.yml
+- include_tasks: apt.yml
 
-- include: unattended.yml
+- include_tasks: unattended.yml
   when: unattended_install
 
-- include: upgrade_now.yml
+- include_tasks: upgrade_now.yml
   when: upgrade_now
